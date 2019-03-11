@@ -20,14 +20,13 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ctc-wF-awQ">
-                        <rect key="frame" x="26" y="21" width="67" height="73"/>
+                        <rect key="frame" x="26" y="16" width="41.5" height="83"/>
                         <constraints>
-                            <constraint firstAttribute="width" secondItem="Ctc-wF-awQ" secondAttribute="height" multiplier="67:73" id="dUt-dy-1xr"/>
-                            <constraint firstAttribute="width" constant="67" id="qDn-6v-VVc"/>
+                            <constraint firstAttribute="width" secondItem="Ctc-wF-awQ" secondAttribute="height" multiplier="1:2" id="dUt-dy-1xr"/>
                         </constraints>
                     </imageView>
                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TLh-PW-Xdu">
-                        <rect key="frame" x="101" y="33" width="42" height="49"/>
+                        <rect key="frame" x="75.5" y="33" width="42" height="49"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lLb-EN-mlB">
                                 <rect key="frame" x="0.0" y="0.0" width="42" height="20.5"/>
@@ -45,14 +44,20 @@
                     </stackView>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="Ctc-wF-awQ" secondAttribute="bottom" constant="10" id="N2K-R2-NWW"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ctc-wF-awQ" secondAttribute="bottom" constant="5" id="N2K-R2-NWW"/>
                     <constraint firstItem="TLh-PW-Xdu" firstAttribute="centerY" secondItem="Ctc-wF-awQ" secondAttribute="centerY" id="QKG-KM-i5V"/>
                     <constraint firstItem="TLh-PW-Xdu" firstAttribute="leading" secondItem="Ctc-wF-awQ" secondAttribute="trailing" constant="8" id="Shd-Ai-I0q"/>
                     <constraint firstItem="Ctc-wF-awQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="10" id="VFu-a2-GNd"/>
-                    <constraint firstItem="Ctc-wF-awQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="10" id="p0H-wo-OxW"/>
+                    <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="TLh-PW-Xdu" secondAttribute="trailing" constant="10" id="n30-rv-CxY"/>
+                    <constraint firstItem="Ctc-wF-awQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="p0H-wo-OxW"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="beerAlcoholLevel" destination="1VR-4b-tOG" id="F2O-eu-GGv"/>
+                <outlet property="beerImage" destination="Ctc-wF-awQ" id="Pul-JR-R1g"/>
+                <outlet property="beerName" destination="lLb-EN-mlB" id="2F3-TK-CxZ"/>
+            </connections>
             <point key="canvasLocation" x="176.80000000000001" y="186.65667166416793"/>
         </tableViewCell>
     </objects>

@@ -9,13 +9,13 @@
 import Foundation
 
 struct Beer: Decodable {
-    let id: Int
-    let name: String
-    let tagline: String
-    let imageURL: String
-    let abv: Double
+    let id: Int?
+    let name: String?
+    let tagline: String?
+    let imageURL: String?
+    let abv: Double?
     let ibu: Double?
-    let description: String
+    let description: String?
     
     enum CodingKeys: String, CodingKey {
         case id
